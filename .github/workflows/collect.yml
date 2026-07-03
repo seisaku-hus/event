@@ -6,6 +6,9 @@ on:
     - cron: '0 21 * * 0'
   workflow_dispatch: {}  # 手動実行用ボタンも有効化
 
+permissions:
+  contents: write  # git push に必要
+
 jobs:
   collect:
     runs-on: ubuntu-latest
